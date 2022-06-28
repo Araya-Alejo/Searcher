@@ -1,8 +1,8 @@
 import ctypes
 import Searcher as searcher
-import keyboard
-import time
-import pyperclip as clipboard
+# import keyboard
+# import time
+# import pyperclip as clipboard
 
 CF_TEXT = 1
 
@@ -14,14 +14,14 @@ user32 = ctypes.windll.user32
 user32.GetClipboardData.restype = ctypes.c_void_p
 
 
-def Paste():
-    """ Paste in clipboard the selected area"""
-    time.sleep(.1)
-    keyboard.send("ctrl+c")
+# def Paste():
+#     """ Paste in clipboard the selected area"""
+#     time.sleep(.1)
+#     keyboard.send("ctrl+c")
 
 def get_clipboard_text():
-    Paste()
-    Paste()
+    # Paste()
+    # Paste()
     user32.OpenClipboard(0)
     try:
         if user32.IsClipboardFormatAvailable(CF_TEXT):
