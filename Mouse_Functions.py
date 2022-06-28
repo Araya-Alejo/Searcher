@@ -2,6 +2,7 @@ import ctypes
 import Searcher as searcher
 import keyboard
 import time
+import pyperclip as clipboard
 
 CF_TEXT = 1
 
