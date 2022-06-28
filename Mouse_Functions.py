@@ -1,7 +1,6 @@
 import ctypes
 import Searcher as searcher
 import keyboard
-import time
 
 CF_TEXT = 1
 
