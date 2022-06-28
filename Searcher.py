@@ -10,5 +10,8 @@ def buscar_lo_seleccionado(query:str):
         query:str: what you wanna find
 
     '''
-    webbrowser.open("https://google.com/search?q={}".format(query), new=2, autoraise=True)
+    search_engines = {"https://google.com/search?q={}", "https://scholar.google.es/scholar?hl=es&as_sdt=0%2C5&q={}&btnG=", "https://duckduckgo.com/?q={}"}
+
+    for url in search_engines:
+        webbrowser.open(url.format(query), new=2, autoraise=True)
 

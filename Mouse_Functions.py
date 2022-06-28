@@ -16,8 +16,8 @@ user32.GetClipboardData.restype = ctypes.c_void_p
 
 # def Paste():
 #     """ Paste in clipboard the selected area"""
-#     time.sleep(.1)
 #     keyboard.send("ctrl+c")
+#     time.sleep(.1)
 
 def get_clipboard_text():
     # Paste()
