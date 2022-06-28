@@ -1,8 +1,8 @@
-import Mouse_Functions
+import Mouse
 
 def main():
-
-    Mouse_Functions.get_clipboard_text
+    
+    Mouse.get_clipboard_text
 
 if __name__ == '__main__':
     main()

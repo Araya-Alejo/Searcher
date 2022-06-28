@@ -1,5 +1,5 @@
 from distutils.core import setup
 import py2exe 
-import Searcher
+import Main
 
 setup(console=['Main.py'])
