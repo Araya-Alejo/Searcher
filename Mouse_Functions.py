@@ -1,6 +1,7 @@
 import ctypes
 import Searcher as searcher
 import keyboard
+import time
 
 CF_TEXT = 1
 
@@ -14,6 +15,7 @@ user32.GetClipboardData.restype = ctypes.c_void_p
 
 def Paste():
     """ Paste in clipboard the selected area"""
+    time.sleep(.1)
     keyboard.send("ctrl+c")
 
 def get_clipboard_text():
